@@ -9,18 +9,20 @@
     <meta charset="UTF-8" />
   </head>
   <body>
-    <header>What's for Dinner?</header>
-    <button>ADD A RECIPE</button>
+    <header>
+      <h1>What's for Dinner?</h1>
+      <button>ADD A RECIPE</button>
+    </header>
     <section>
       <p>What are you looking for?</p>
       <form>
-        <input type="radio" id="sides" name="dish" value="sides">
+        <input type="radio" id="sides" name="dish-selection" value="sides">
         <label for="side">Side</label><br />
-        <input type="radio" id="mains" name="dish" value="mains">
+        <input type="radio" id="mains" name="dish-selection" value="mains">
         <label for="main">Main Dish</label><br />
-        <input type="radio" id="desserts" name="dish" value="desserts">
+        <input type="radio" id="desserts" name="dish-selection" value="desserts">
         <label for="dessert">Dessert</label><br />
-        <input type="radio" id="meals" name="dish" value="meals">
+        <input type="radio" id="meals" name="dish-selection" value="meals">
         <label for="meal">Entire Meal</label><br />
         <button type="button" id="dish-selector">LET'S COOK!</button>
       </form>
@@ -32,8 +34,8 @@
     </section>
     <section class="dish-page hidden">
       <p>You should make:</p>
-      <p class=""></p>
-      <button>CLEAR</button>
+      <p id="dish"></p>
+      <button type="button" id="clear-dish">CLEAR</button>
     </section>
   </body>
   <script type="text/javascript" src="main.js"></script>
