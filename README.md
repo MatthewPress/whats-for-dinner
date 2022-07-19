@@ -24,6 +24,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 
 ## MVP Tasks
 * HTML: Create a draft HTML: header, one section w/ a radio buttons form, one section that holds the pot, one section that displays the dish where the pot use to be w/ clear button
+* HTML: head and meta data
 * JS: Create some dish arrays for side, main dish, dessert
 * JS: querySelectors for elements needed in JS
 * JS: Event listeners on the buttons: Let's Cook, Clear
