@@ -36,7 +36,7 @@ The spec for this project can be found [here](https://frontend.turing.io/project
 * CSS: Match comp
 
 ## error: (CYOA) Error Handling and Clear Button
-* Hide button when clear is pressed
+* Refactor to reduce excessive code
 
 ## error: Completed Tasks:
 * The user can click a clear button, which clears the page of any message. User should only be able to click the clear button if a food is visible. When the clear button is clicked and the food is removed, the image of the cookpot should re-appear.

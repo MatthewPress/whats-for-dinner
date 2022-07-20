@@ -30,9 +30,9 @@ var menu = {
   ]
 };
 
-dishGeneratorButton.addEventListener("click", displayRandomDish);
-clearDishButton.addEventListener("click", displayDishPage);
 form.addEventListener("change", displayDishGenerator);
+dishGeneratorButton.addEventListener("click", displayRandomDish);
+clearDishButton.addEventListener("click", displayPotPage);
 
 function getRandomIndex(dishArray) {
   return Math.floor(Math.random() * dishArray.length);
@@ -51,10 +51,23 @@ function displayRandomDish() {
 
 function displayDishPage() {
   dishOutput.innerText = "";
-  potPage.classList.toggle("hidden");
-  dishPage.classList.toggle("hidden");
+  potPage.classList.add("hidden");
+  dishPage.classList.remove("hidden");
+}
+
+function displayPotPage() {
+  dishOutput.innerText = "";
+  potPage.classList.remove("hidden");
+  dishPage.classList.add("hidden");
+  dishGeneratorButton.classList.add("hidden");
+
+  for (var i = 0; i < dishSelection.length; i++) {
+    if (dishSelection[i].checked) {
+      dishSelection[i].checked = false;
+    }
+  }
 }
 
 function displayDishGenerator() {
-  dishGeneratorButton.classList.toggle("hidden");
+  dishGeneratorButton.classList.remove("hidden");
 }
