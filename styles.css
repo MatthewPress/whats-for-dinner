@@ -66,14 +66,14 @@ h1 {
   margin: 15px;
 }
 
-.dish-selector {
+.dish-generator {
   background: #0fb9b1;
   padding: 10px 50px;
   border-radius: 5px;
   margin: 10px;
 }
 
-.dish-selector:hover {
+.dish-generator:hover {
   border: 1px solid blue;
 }
 
