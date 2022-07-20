@@ -1,11 +1,9 @@
 var dishSelection = document.getElementsByName("dish-selection");
-var dishGeneratorButton = document.querySelector("#dish-selector");
+var dishGeneratorButton = document.querySelector(".dish-selector");
 var potPage = document.querySelector(".pot-page");
 var dishPage = document.querySelector(".dish-page");
-var dishOutput = document.querySelector("#dish");
-var clearDishButton = document.querySelector("#clear-dish");
-
-
+var dishOutput = document.querySelector(".dish");
+var clearDishButton = document.querySelector(".clear-dish");
 
 var menu = {
   sides: [
@@ -32,14 +30,14 @@ var menu = {
 };
 
 dishGeneratorButton.addEventListener("click", displayRandomDish);
-clearDishButton.addEventListener("click", toggleDishPage);
+clearDishButton.addEventListener("click", displayPotPage);
 
 function getRandomIndex(dishArray) {
   return Math.floor(Math.random() * dishArray.length);
 }
 
 function displayRandomDish() {
-  toggleDishPage();
+  displayDishPage();
 
   for (var i = 0; i < dishSelection.length; i++) {
     if (dishSelection[i].checked) {
@@ -49,8 +47,13 @@ function displayRandomDish() {
   }
 }
 
-function toggleDishPage() {
+function displayDishPage() {
   dishOutput.innerText = "";
-  potPage.classList.toggle("hidden");
-  dishPage.classList.toggle("hidden");
+  potPage.classList.add("hidden");
+  dishPage.classList.remove("hidden");
+}
+
+function displayPotPage() {
+  potPage.classList.remove("hidden");
+  dishPage.classList.add("hidden");
 }
