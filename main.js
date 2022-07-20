@@ -5,6 +5,8 @@ var dishPage = document.querySelector(".dish-page");
 var dishOutput = document.querySelector(".dish");
 var clearDishButton = document.querySelector(".clear-dish");
 
+  // Error Handling
+
 var menu = {
   sides: [
     "Miso Glazed Carrots",
@@ -30,7 +32,10 @@ var menu = {
 };
 
 dishGeneratorButton.addEventListener("click", displayRandomDish);
-clearDishButton.addEventListener("click", displayPotPage);
+clearDishButton.addEventListener("click", displayDishPage);
+
+  // Error Handling
+
 
 function getRandomIndex(dishArray) {
   return Math.floor(Math.random() * dishArray.length);
@@ -49,11 +54,8 @@ function displayRandomDish() {
 
 function displayDishPage() {
   dishOutput.innerText = "";
-  potPage.classList.add("hidden");
-  dishPage.classList.remove("hidden");
+  potPage.classList.toggle("hidden");
+  dishPage.classList.toggle("hidden");
 }
 
-function displayPotPage() {
-  potPage.classList.remove("hidden");
-  dishPage.classList.add("hidden");
-}
+  // Error Handling
