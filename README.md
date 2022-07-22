@@ -25,6 +25,3 @@ What's for dinner? The ultimate question. Use this code base to help give you so
 - Event handlers for: form (if a dish category is selected, display "Let's Cook!" button), Let's Cook! (click, get radio button value, find appropriate array, randomly select dish, hide pot section, display dish section), Clear (click, clear dish section, hide dish section, display pot section, clear radio button choice, hide "Let's Cook!" button)
 
 ![Preview Functionality](assets/project-functions.png)
-
-## main: MVP Tasks
-* CSS: Position Clear button at bottom right of section/article (make button a part of the section and hide or display it?)
