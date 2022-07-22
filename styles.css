@@ -1,14 +1,4 @@
-/* font-family: 'Roboto', sans-serif;
-
-COLORS
-teal - #0fb9b1;
-frosted white - rgba(225, 225, 225, .9);
-grey - #95a5a6;
-red - #ee5253
-
-*/
-
-/* Whole Page */
+/* Body */
 * {
   box-sizing: border-box;
 }
@@ -16,6 +6,8 @@ red - #ee5253
 body {
   font-family: 'Roboto', sans-serif;
   background-image: url("assets/burger-friends.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0px;
 }
 
@@ -36,10 +28,9 @@ button {
   font-size: 15px;
   border-style: hidden;
   border-radius: 5px;
-  /* margin: 10px; */
 }
 
-/* Main Content */
+/* Main */
 .container {
   display: flex;
   flex-direction: row;
@@ -54,6 +45,10 @@ section {
   margin: 30px;
   width: 400px;
   height: 300px;
+}
+
+.hidden {
+  display: none !important;
 }
 
 /* Select Dish Page */
@@ -85,14 +80,16 @@ span {
   color: #ee5253;
 }
 
-/* Pot Page */
-.pot-page {
+/* Pot & Dish Page */
+.pot-page,
+.dish-page {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100%;
 }
 
+/* Pot Page */
 img {
   opacity: 0.6;
   width: 30%;
@@ -101,12 +98,8 @@ img {
 
 /* Dish Page */
 .dish-page {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   min-width: 100%;
-  min-height: 100%;
 }
 
 p {
@@ -126,6 +119,12 @@ p {
   align-self: flex-end;
 }
 
-.hidden {
-  display: none;
-}
+/* font-family: 'Roboto', sans-serif;
+
+COLORS
+teal - #0fb9b1;
+frosted white - rgba(225, 225, 225, .9);
+grey - #95a5a6;
+red - #ee5253
+
+*/
