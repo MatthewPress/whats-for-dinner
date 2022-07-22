@@ -2,10 +2,10 @@
 <html lang="en-US" dir="ltr">
   <head>
     <title>What's Cooking</title>
-    <link rel="icon" type="image/x-icon" href="assets/dish-favicon.ico"/>
-    <link rel="stylesheet" href="./styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="assets/dish-favicon.ico" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
   </head>
   <body>
@@ -13,26 +13,26 @@
       <h3>What's for Dinner?</h3>
       <button class="add-recipe">ADD A RECIPE</button>
     </header>
-    <div class="container">
+    <main class="container">
       <section>
         <article class="selection-page">
           <h1>What are you looking for?<span>*</span></h1>
           <form>
             <input type="radio" id="sides" name="dish-selection" value="sides">
-            <label for="side">Side</label><br/>
+            <label for="side">Side</label><br />
             <input type="radio" id="mains" name="dish-selection" value="mains">
-            <label for="main">Main Dish</label><br/>
+            <label for="main">Main Dish</label><br />
             <input type="radio" id="desserts" name="dish-selection" value="desserts">
-            <label for="dessert">Dessert</label><br/>
+            <label for="dessert">Dessert</label><br />
             <input type="radio" id="meals" name="dish-selection" value="meals">
-            <label for="meal">Entire Meal</label><br/>
+            <label for="meal">Entire Meal</label><br />
             <button type="button" class="dish-generator hidden">LET'S COOK!</button>
           </form>
         </article>
       </section>
       <section>
         <article class="pot-page">
-          <img src="assets/cookpot.svg" alt="cookpot image">
+          <img src="assets/cookpot.svg" alt="cookpot image" />
         </article>
         <article class="dish-page hidden">
           <p><i>You should make:</i></p>
@@ -40,7 +40,7 @@
           <button type="button" class="clear-dish">CLEAR</button>
         </article>
       </section>
-    </div>
+    </main>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
