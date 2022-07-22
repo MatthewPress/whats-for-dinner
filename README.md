@@ -4,7 +4,7 @@
 
 What's for dinner? The ultimate question. Use this code base to help give you some inspiration.
 
-![Preview Image](assets/read-me-img.png)
+![Preview Image](assets/project-overview.png)
 
 ## Setup
 
@@ -14,7 +14,7 @@ What's for dinner? The ultimate question. Use this code base to help give you so
 
 ## Layout and Style
 
-- Layout and Style is based on a provided comp from The Turing School of Software and Design
+- Layout and Style are based on a provided comp from the Turing School of Software and Design
 - The spec for this project can be found [here](https://frontend.turing.io/projects/module-1/dinner.html).
 
 ## Functionality
@@ -23,6 +23,8 @@ What's for dinner? The ultimate question. Use this code base to help give you so
 - QuerySelectors for HTML elements needed in JS
 - Event listeners on: form, "Let's Cook!" button, "Clear" button
 - Event handlers for: form (if a dish category is selected, display "Let's Cook!" button), Let's Cook! (click, get radio button value, find appropriate array, randomly select dish, hide pot section, display dish section), Clear (click, clear dish section, hide dish section, display pot section, clear radio button choice, hide "Let's Cook!" button)
+
+![Preview Functionality](assets/project-functions.png)
 
 ## main: MVP Tasks
 * CSS: Position Clear button at bottom right of section/article (make button a part of the section and hide or display it?)
